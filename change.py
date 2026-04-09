@@ -5,6 +5,7 @@
 
 print("Please enter an amount in cents less than a dollar.")
 userInput = int(input())
+print()
 
 print("Your change will be:")
 
@@ -22,6 +23,3 @@ remainder = remainder % nickel
 
 penny = 1
 print("P: ", int(remainder/penny))
-remainder = remainder % penny
-
-print("'")
