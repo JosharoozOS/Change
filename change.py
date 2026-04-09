@@ -3,7 +3,7 @@
 # Date: 4/8/2026
 # Description: We are creating a system that calculates the coind you give when giveing change.
 
-print("please enter an amount in cents less than a dollar")
+print("please enter an amount in cents less than a dollar.")
 userInput = int(input())
 
 print("your change will be:")
