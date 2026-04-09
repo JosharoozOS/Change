@@ -10,16 +10,20 @@ print()
 print("Your change will be:")
 
 quarter = 25
-print("Q: ", int(userInput/quarter))
+q = int(userInput/quarter)
+print("Q: ", q)
 remainder = userInput % quarter
 
 dime = 10
-print("D: ", int(remainder/dime))
+d = int(remainder/dime)
+print("D: ", d)
 remainder = remainder % dime
 
 nickel = 5
-print("N: ", int(remainder/nickel))
+n = int(remainder/nickel)
+print("N: ", n)
 remainder = remainder % nickel
 
 penny = 1
-print("P: ", int(remainder/penny))
+p = int(remainder/penny)
+print("P: ", p)
