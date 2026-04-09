@@ -6,6 +6,8 @@
 print("please enter an amount in cents less that a dollar")
 userInput = float(input())
 
+print("your change will be:")
+
 quarter = 25
 print("Q: ", int(userInput/quarter))
 remainder = userInput % quarter
@@ -21,6 +23,3 @@ remainder = remainder % nickel
 penny = 1
 print("P: ", int(remainder/penny))
 remainder = remainder % penny
-
-
-
