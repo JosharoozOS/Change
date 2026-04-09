@@ -5,7 +5,7 @@
 
 print("Please enter an amount in cents less than a dollar.")
 userInput = int(input())
-print()
+
 
 print("Your change will be:")
 
