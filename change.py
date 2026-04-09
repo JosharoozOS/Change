@@ -3,30 +3,21 @@
 # Date: 4/8/2026
 # Description: We are creating a system that calculates the coind you give when giveing change.
 
-print("Please enter an amount in cents less than a dollar.")
-userInput = int(input())
+cents = int(input("Please enter an amount in cents less than a dollar.\n"))
 
+quarters = cents // 25
+cents %= 25
+
+dimes = cents // 10
+cents %= 10
+
+nickels = cents // 5
+cents %= 5
+
+pennies = cents
 
 print("Your change will be:")
-
-quarter = 25
-q = int(userInput/quarter)
-print("Q: ", q)
-print()
-remainder = userInput % quarter
-
-dime = 10
-d = int(remainder/dime)
-print("D: ", d)
-print()
-remainder = remainder % dime
-
-nickel = 5
-n = int(remainder/nickel)
-print("N: ", n)
-print()
-remainder = remainder % nickel
-
-penny = 1
-p = int(remainder/penny)
-print("P: ", p)
+print(f"Q: {quarters}")
+print(f"D: {dimes}")
+print(f"N: {nickels}")
+print(f"P: {pennies}")
