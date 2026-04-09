@@ -4,7 +4,7 @@
 # Description: We are creating a system that calculates the coind you give when giveing change.
 
 print("please enter an amount in cents less that a dollar")
-userInput = float(input())
+userInput = int(input())
 
 print("your change will be:")
 
